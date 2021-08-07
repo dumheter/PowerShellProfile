@@ -13,5 +13,5 @@ param(
         }
 
         foreach ($file in $files) { clang-format -style=file -i $file.FullName } 
-        echo "Done formatting all .(cpp|h|hpp) files in $directory"
+        echo "Done formatting all .(cpp|h|hpp) files in '$directory', excluding files in 'thirdparty' and 'deps'."
 }
