@@ -3,6 +3,8 @@ echo PowerShell
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Emacs
 
+function dev { set-location C:/dev }
+
 function Invoke-Format {
 param(
         [Parameter(Mandatory=$true)]
